@@ -26,6 +26,11 @@
     font-weight: 700;
     font-style: italic;
 }
+img {
+    width: 100%;
+    object-fit: contain;
+    display: block;
+}
 
 /*General*/
 .desktop-menu {
@@ -45,7 +50,7 @@
 /*NERO #333333 */
 
 .container {
-    max-width: 900px;
+    max-width: 80%;
     margin: 0 auto;
     padding: 10px;
 }
@@ -74,6 +79,49 @@ header {
 
 /*SEZIONE1*/
 
+.my-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.my-col {
+    padding: 20px;
+    width: 100%;
+    
+}
+
+.info-card {
+    background-color: #B5DDFF;
+    border-radius: 15px;
+    padding: 20px 20px 0;
+}
+.info-card .screen-img {
+    margin-top: 30px;
+}
+.info-card h3 {
+    color: #0084FD;
+    padding: 15px;
+}
+.info-card p {
+    color: #333333;
+    opacity: 0.9;
+    font-weight: bold;
+    padding: 15px;
+    
+    line-height: 1.2rem;
+}
+.info-card a {
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;   
+}
+.app-store-dwnld {
+    color: white;
+    background-color: #0084FD;
+    padding: 10px 35px;
+    letter-spacing: .2rem;
+    font-weight: bold;
+}
+
 /*SEZIONE2*/
 
 /*SEZIONE3*/
@@ -85,7 +133,12 @@ header {
 /*FOOTER*/
 
 /*TABLET*/
-
+@media screen and (min-width: 576px) {
+    .col-2-3-desktop {
+        width: calc((100% / 3) * 2);
+        padding: 10px;
+    }
+}
 /*DESKTOP*/
 
 @media screen and (min-width: 992px) {
@@ -94,5 +147,19 @@ header {
     }
     .mobile-menu {
         display: none;
+    }
+    .flex-desktop {
+        display: flex;
+        justify-content: center;
+    }
+    .col-2-3-desktop {
+        width: calc((100% / 3) * 2);
+        padding: 10px;
+        
+    }
+
+    .col-1-3-desktop {
+        width: calc(100% / 3);
+        padding: 10px;
     }
 }
