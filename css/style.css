@@ -175,7 +175,50 @@ header {
     font-size: 1.2rem;
 }
 /*SEZIONE3*/
+.testimonial-intro {
+    text-align: center;
+    padding: 15px;
 
+}
+.testimonial-intro p {
+    font-size: 0.9rem;
+    line-height: 30px;
+}
+.testimonial-intro h2 {
+    color: #9792E4;
+    line-height: 30px;
+    font-size: 1.8rem;
+    padding: 15px 0;
+}
+.id-quote-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    background-color: #9792E4;
+    padding: 15px 0;
+    border-radius: 40px;
+    margin: 20px 0;
+}
+
+.img-quote-card > img {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 150px;
+    width: 150px;
+    margin: 10px 0;
+}
+.id-quote-card > div,
+.id-quote-card > div > p {
+    color: white;
+    font-size: 0.9rem;
+    line-height: 30px;
+    padding: 20px 0;
+}
+.id-quote-card > div > p:last-child {
+    text-transform: uppercase;
+    font-weight: bold;
+}
 /*SEZIONE4*/
 
 /*SEZIONE5*/
