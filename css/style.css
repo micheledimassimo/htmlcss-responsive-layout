@@ -26,7 +26,10 @@
     font-weight: 700;
     font-style: italic;
 }
-
+/*AZZURRO SCURO #0084FD */
+/*AZZURRO CHIARO #B5DDFF */
+/*LILLA #9792E4 */
+/*NERO #333333 */
 
 /*General*/
 .desktop-menu {
@@ -49,10 +52,7 @@ img {
     object-fit: contain;
     display: block;
 }
-/*AZZURRO SCURO #0084FD */
-/*AZZURRO CHIARO #B5DDFF */
-/*LILLA #9792E4 */
-/*NERO #333333 */
+
 
 .container {
     max-width: 80%;
@@ -225,6 +225,35 @@ header {
 }
 /*SEZIONE4*/
 
+.violet-btn {
+    background-color: #9792E4;
+    padding: 10px 20px;
+}
+.my-row-tablet > .my-col.col-1-2-tablet.col-1-3-desktop {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.my-row-tablet > .my-col.col-1-2-tablet.col-1-3-desktop > h1 {
+    font-size: 3rem;
+}
+
+.my-row-tablet > .my-col.col-1-2-tablet.col-1-3-desktop > h1,
+.my-row-tablet > .my-col.col-1-2-tablet.col-1-3-desktop > h2 {
+    color: #9792E4;
+    padding: 10px 0;
+}
+.my-row-tablet > .my-col.col-1-2-tablet.col-1-3-desktop > p {
+    line-height: 30px;
+    padding: 10px 0;
+}
+.container > div > h2 {
+    text-align: center;
+    font-size: 3rem;
+    padding: 20px 0;
+}
 /*SEZIONE5*/
 
 /*FOOTER*/
@@ -237,13 +266,8 @@ header {
         
     }
     
-    .col-2-3-desktop {
-        width: calc((100% / 3) * 2);
-        padding: 10px;
-        
-    }
 
-    .col-1-3-desktop {
+    .col-1-3-tablet {
         width: calc(100% / 3);
         padding: 10px;
     }
@@ -260,6 +284,14 @@ header {
         width: 70%;
         flex-grow: 1;
         text-align: left;
+    }
+    .my-row-tablet {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .col-1-2-tablet {
+        width: calc((100% / 2) - 20px);
+        margin: 10px;
     }
 }
 /*DESKTOP*/
@@ -287,6 +319,9 @@ header {
         max-height: 260px;
         margin: 0 auto;
     }
-    
+    .col-1-3-desktop {
+        width: calc((100% / 3) - 30px);
+        margin: 10px;
+    }
 
 }
